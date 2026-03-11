@@ -1,9 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
+
+<head>
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <form>
-    <label for="cname">Name:</label><br>
-    <input type="text" id="cname" name="cname"><br>
-  </form>
+
+  <div class="sheet_header">
+
+    <div class="header_row" id="header_firstrow">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="dropdown">
+        <label for="nature">Nature:</label>
+        <select name="nature" id="nature">
+          <option value="caregiver">Caregiver</option>
+          <option value="loner">Loner</option>
+        </select>
+      </div>
+      
+      <div class="dropdown">
+        <label for="clan">Clan:</label>
+        <select name="clan" id="clan">
+          <option value="brujah">Brujah</option>
+          <option value="gangrel">Gangrel</option>
+          <option value="tremere">Tremere</option>
+          <option value="ventrue">Ventrue</option>
+          <option value="toreador">Toreador</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="header_row" id="header_secondrow">
+      <div id="playername_container">
+        <label for="playername">Player:</label>
+        <input type="text" name="playername" id="playername">
+      </div>
+
+      <div id="demeanor_container">
+        <label for="demeanor">Demeanor:</label>
+        <select name="demeanor" id="demeanor">
+
+        </select>
+      </div>
+
+      <div>
+        <label for="generation">Generation:</label>
+        <select>
+          
+        </select>
+      </div>
+
+    <div class="header_row"></div>
+
+  </div>
+
 </body>
+
 </html>
